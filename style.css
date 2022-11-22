@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --hover-color: #7679c4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 74px;
+  line-height: 120px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  transition: 0.4s all ease;
+}
+
+.contact-link:hover {
+  background-color: #f5f2fe;
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.4s all ease;
+}
+
+.about-link:hover {
+  color: white;
+  background: var(--hover-color);
+  border: 1px solid var(--hover-color);
+  box-shadow: var(--box-shadow);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.img-wrapper {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .column-wrapper {
+    max-width: 300px;
+  }
+  .columns-row {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .second-column {
+    flex-direction: column-reverse;
+  }
+  .email-link {
+    font-size: 24px;
+  }
+}
